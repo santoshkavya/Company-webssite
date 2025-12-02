@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technologies | Sampath Software</title>
+  <link rel="stylesheet" href="web.css" />
+   <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScgeGcoLhZQl1-q_l6MScDtR5sNhNL0c-92w&s" />
+</head>
+<style>
+    #technologies .section-subtitle { max-width: 800px; margin: 0 auto 2rem; }
+
+.tech-categories {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.tech-category h3 { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; }
+
+.tech-list { display: flex; flex-wrap: wrap; gap: 1rem; }
+
+.tech-item {
+  background: #f9f9f9;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.tech-logo {
+  display: inline-block;
+  font-weight: bold;
+  color: #004b8d;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  z-index: 1000;
+  min-width: 180px;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+  color: #6a2d92;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+</style>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="https://www.sampathsoftware.in/images/logo.png" alt="Sampath Software Solutions" />
+      </div>
+
+      <ul class="nav-menu">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+       <li class="dropdown">
+        <a href="about.html" class="nav-link">About</a>
+        <ul class="dropdown-menu">
+        <li><a href="workenv.html">Work Environment</a></li>
+        <li><a href="client.html">Clients</a></li>
+        </ul>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="tech.html" class="nav-link">Technology</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section" id="technologies">
+    <div class="container">
+      <h2 class="section-title">Our Technology Stack</h2>
+      <p class="section-subtitle">
+        We leverage cutting-edge technologies and proven frameworks to build robust, scalable, and future-ready applications.
+      </p>
+
+      <div class="tech-categories">
+        <!-- Reusable Structure -->
+        <div class="tech-category">
+          <h3><span class="tech-icon">🎨</span> Frontend Development</h3>
+          <div class="tech-list">
+            <div class="tech-item"><div class="tech-logo">React</div><span>React.js</span></div>
+            <div class="tech-item"><div class="tech-logo">Vue</div><span>Vue.js</span></div>
+            <div class="tech-item"><div class="tech-logo">NG</div><span>Angular</span></div>
+            <div class="tech-item"><div class="tech-logo">JS</div><span>JavaScript</span></div>
+            <div class="tech-item"><div class="tech-logo">TS</div><span>TypeScript</span></div>
+            <div class="tech-item"><div class="tech-logo">CSS</div><span>CSS3/SASS</span></div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3><span class="tech-icon">⚙️</span> Backend Development</h3>
+          <div class="tech-list">
+            <div class="tech-item"><div class="tech-logo">Node</div><span>Node.js</span></div>
+            <div class="tech-item"><div class="tech-logo">Py</div><span>Python</span></div>
+            <div class="tech-item"><div class="tech-logo">Java</div><span>Java</span></div>
+            <div class="tech-item"><div class="tech-logo">C#</div><span>C# .NET</span></div>
+            <div class="tech-item"><div class="tech-logo">PHP</div><span>PHP</span></div>
+            <div class="tech-item"><div class="tech-logo">Go</div><span>Go</span></div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3><span class="tech-icon">🗄️</span> Database Management</h3>
+          <div class="tech-list">
+            <div class="tech-item"><div class="tech-logo">MySQL</div><span>MySQL</span></div>
+            <div class="tech-item"><div class="tech-logo">PG</div><span>PostgreSQL</span></div>
+            <div class="tech-item"><div class="tech-logo">MS</div><span>SQL Server</span></div>
+            <div class="tech-item"><div class="tech-logo">Mongo</div><span>MongoDB</span></div>
+            <div class="tech-item"><div class="tech-logo">Redis</div><span>Redis</span></div>
+            <div class="tech-item"><div class="tech-logo">Oracle</div><span>Oracle DB</span></div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3><span class="tech-icon">📱</span> Mobile Development</h3>
+          <div class="tech-list">
+            <div class="tech-item"><div class="tech-logo">RN</div><span>React Native</span></div>
+            <div class="tech-item"><div class="tech-logo">Flutter</div><span>Flutter</span></div>
+            <div class="tech-item"><div class="tech-logo">iOS</div><span>Native iOS</span></div>
+            <div class="tech-item"><div class="tech-logo">And</div><span>Android</span></div>
+            <div class="tech-item"><div class="tech-logo">Ionic</div><span>Ionic</span></div>
+            <div class="tech-item"><div class="tech-logo">Xam</div><span>Xamarin</span></div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3><span class="tech-icon">☁️</span> Cloud & DevOps</h3>
+          <div class="tech-list">
+            <div class="tech-item"><div class="tech-logo">AWS</div><span>AWS</span></div>
+            <div class="tech-item"><div class="tech-logo">Azure</div><span>Azure</span></div>
+            <div class="tech-item"><div class="tech-logo">GCP</div><span>Google Cloud</span></div>
+            <div class="tech-item"><div class="tech-logo">Docker</div><span>Docker</span></div>
+            <div class="tech-item"><div class="tech-logo">K8s</div><span>Kubernetes</span></div>
+            <div class="tech-item"><div class="tech-logo">CI/CD</div><span>CI/CD Pipelines</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Sampath Software</h3>
+          <p>Innovative software solutions that drive growth. Partner with us to realize your vision.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+           <p><a href="home.html">Home</a></p>
+                   <p><a href="services.html">Services</a></p>
+                   <p><a href="about.html">About Us</a></p>
+                   <p><a href="portfolio.html">Portfolio</a></p>
+                   <p><a href="tech.html">Technology</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p>📍 Visakhapatnam, Andhra Pradesh</p>
+          <p>📞 +91 9876543210</p>
+          <p>✉️ info@sampathsoftware.in</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sampath Software. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

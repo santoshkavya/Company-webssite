@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Sampath Software Solutions</title>
+  <link rel="stylesheet" href="web.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+   <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScgeGcoLhZQl1-q_l6MScDtR5sNhNL0c-92w&s" />
+    
+<style>
+  .dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  z-index: 1000;
+  min-width: 180px;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+  color: #6a2d92;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.slideshow-container {
+  position: relative;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mySlides {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure images fill without distortion */
+  display: none;
+  border-radius: 10px;
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.slide-btn.left {
+  left: 0;
+}
+
+.slide-btn.right {
+  right: 0;
+}
+
+.slide-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+</style>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="C:\Users\247\Desktop\Kavya\Sampathsoftware\images\SamLogo-removebg-preview.png" alt="Sampath Software Solutions" />
+      </div>
+      <ul class="nav-menu">
+         <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li class="dropdown">
+        <a href="about.html" class="nav-link">About</a>
+        <ul class="dropdown-menu">
+        <li><a href="workenv.html">Work Environment</a></li>
+        <li><a href="client.html">Clients</a></li>
+        </ul>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="tech.html" class="nav-link">Technology</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+ 
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      
+ <!-- Slideshow Section -->
+<h1>Our Team</h1>
+<div class="slideshow-container">
+  <img class="mySlides" src="C:\Users\247\Downloads\IMG-20250502-WA0024.jpg" alt="Team Member 1">
+  <img class="mySlides" src="C:\Users\247\Downloads\IMG-20250607-WA0024.jpg" alt="Team Member 2">
+
+  <button class="slide-btn left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="slide-btn right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+      <div class="about-content">
+        <div class="about-text">     
+          <h3>Leading Software Development Company</h3>
+          <p>Sampath Software is a premier technology company specializing in custom software development solutions. We help businesses transform their operations through innovative applications that are delivered quickly and cost-effectively into complex environments.</p>
+
+          <p>Our experienced team combines technical expertise with deep industry knowledge to deliver solutions that address real business challenges. We are committed to helping our clients win and grow while providing our professionals with rewarding careers.</p>
+
+          <p>Our approach is governed by a commitment to excellence, innovation, and customer satisfaction. We work closely with our clients to understand their unique requirements and deliver solutions that exceed expectations.</p>
+
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span>Projects Completed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">25+</span>
+              <span>Happy Clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span>Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span>Team Members</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Sampath Software</h3>
+          <p>We deliver innovative software solutions that transform businesses and drive growth. Partner with us to turn your ideas into powerful applications.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+           <p><a href="home.html">Home</a></p>
+                   <p><a href="services.html">Services</a></p>
+                   <p><a href="about.html">About Us</a></p>
+                   <p><a href="portfolio.html">Portfolio</a></p>
+                   <p><a href="tech.html">Technology</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <p>Custom Software Development</p>
+          <p>Web Application Development</p>
+          <p>Mobile App Development</p>
+          <p>Database Solutions</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p>📍 Visakhapatnam, Andhra Pradesh</p>
+          <p>📞 +91 9876543210</p>
+          <p>✉️ info@sampathsoftware.in</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sampath Software. All rights reserved. | Designed with ❤️ for excellence</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+  }
+
+  // ✅ Auto slideshow every 4 seconds
+  setInterval(() => plusDivs(1), 2000);
+</script>
+
+</body>
+</html>

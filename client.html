@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clients | Sampath Software Solutions</title>
+  <link rel="stylesheet" href="web.css" />
+  <link rel="icon" href="https://www.sampathsoftware.in/images/logo.png" type="image/png" />
+  <style>
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .about_work{
+        display: block;
+        margin-top: 46px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .clients-section {
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .clients-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #6a2d92;
+      margin-bottom: 2rem;
+    }
+
+    .clients-logos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .clients-logos img {
+      max-width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+      filter: grayscale(100%);
+    }
+
+    .clients-logos img:hover {
+      transform: scale(1.05);
+      filter: grayscale(0%);
+    }
+
+    .testimonial-section {
+      padding: 3rem 1rem;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .testimonial-section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: #6a2d92;
+    }
+
+    .testimonial {
+      max-width: 800px;
+      margin: auto;
+      font-style: italic;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .clients-section h2,
+      .testimonial-section h3 {
+        font-size: 1.6rem;
+      }
+    }
+    .dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  z-index: 1000;
+  min-width: 180px;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+  color: #6a2d92;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="https://www.sampathsoftware.in/images/logo.png" alt="Sampath Software Solutions" />
+    </div>
+    <ul class="nav-menu">
+      <li><a href="home.html" class="nav-link">Home</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li class="dropdown">
+        <a href="about.html" class="nav-link">About</a>
+        <ul class="dropdown-menu">
+        <li><a href="workenv.html">Work Environment</a></li>
+        <li><a href="client.html">Clients</a></li>
+        </ul>
+      </li>
+      <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+      <li><a href="tech.html" class="nav-link">Technology</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero about_work">
+  <h1>Our Valued Clients</h1>
+  <p>We’ve partnered with visionary clients across industries to build exceptional software solutions that transform their businesses.</p>
+</section>
+
+<!-- Clients Logos Section -->
+<section class="clients-section">
+  <h2>Trusted by Leading Brands</h2>
+  <div class="clients-logos">
+    <img src="https://www.sampathsoftware.in/images/clients/client1.png" alt="Client 1">
+    <img src="https://www.sampathsoftware.in/images/clients/client2.png" alt="Client 2">
+    <img src="https://www.sampathsoftware.in/images/clients/client3.png" alt="Client 3">
+    <img src="https://www.sampathsoftware.in/images/clients/client4.png" alt="Client 4">
+    <img src="https://www.sampathsoftware.in/images/clients/client5.png" alt="Client 5">
+  </div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="testimonial-section">
+  <h3>What Our Clients Say</h3>
+  <p class="testimonial">
+    "Sampath Software Solutions brought our vision to life with precision and passion. Their team’s expertise and communication made the entire development process smooth and successful. Highly recommended!"
+  </p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sampath Software Solutions</h3>
+        <p>We deliver innovative software solutions that transform businesses and drive growth. Partner with us to turn your ideas into powerful applications.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <p><a href="home.html">Home</a></p>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="portfolio.html">Portfolio</a></p>
+        <p><a href="tech.html">Technology</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Services</h3>
+        <p>Custom Software Development</p>
+        <p>Web Application Development</p>
+        <p>Mobile App Development</p>
+        <p>Database Solutions</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>📍 Visakhapatnam, Andhra Pradesh</p>
+        <p>📞 +91 9876543210</p>
+        <p>✉️ info@sampathsoftware.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Sampath Software Solutions. All rights reserved. | Designed with ❤️ for excellence</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
